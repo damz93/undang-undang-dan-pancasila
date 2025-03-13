@@ -1,0 +1,196 @@
+<!DOCTYPE html>
+<html lang="id">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Undang-Undang dan Pancasila | by Dedy A Muzawwir</title>
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/css/bootstrap.min.css" rel="stylesheet">
+    <link rel="icon" type="image/png" href="https://upload.wikimedia.org/wikipedia/commons/thumb/f/fe/Garuda_Pancasila%2C_Coat_of_Arms_of_Indonesia.svg/1200px-Garuda_Pancasila%2C_Coat_of_Arms_of_Indonesia.svg.png">
+
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@400;700&display=swap" rel="stylesheet">
+    <style>
+        body {
+            background: url('https://upload.wikimedia.org/wikipedia/commons/thumb/9/9d/Garuda_Pancasila%2C_Coat_of_Arms_of_Indonesia.svg/800px-Garuda_Pancasila%2C_Coat_of_Arms_of_Indonesia.svg.png') no-repeat center top fixed;
+            background-size: 250px;
+            background-color: #f8f9fa;
+            color: #212529;
+            font-family: 'Poppins', sans-serif;
+        }
+        .section {
+            height: 100vh;
+            display: flex;
+            flex-direction: column;
+            justify-content: center;
+            align-items: center;
+            text-align: center;
+            padding: 20px;
+        }
+        .btn-custom {
+            background-color: #dc3545;
+            color: white;
+            font-size: 1.1rem;
+            padding: 12px;
+            border-radius: 8px;
+            width: 200px;
+            margin-top: 20px;
+            transition: 0.3s;
+            border: none;
+            text-decoration: none;
+        }
+        .btn-custom:hover {
+            background-color: #b52b3a;
+        }
+        #hero {
+            /* background-color: #ffffff; */
+            height: 100vh;
+        }
+        .btn-top {
+            position: fixed;
+            bottom: 20px;
+            right: 20px;
+            display: none;
+            background-color: #d77272;
+            color: white;
+            border: none;
+            padding: 10px 15px;
+            border-radius: 5px;
+            cursor: pointer;
+        }
+        .btn-top:hover {
+            background-color: #993d3d;
+        }
+        #pancasila { background-color: #ffeeba; }
+        #uud { background-color: #f8f9fa; }
+        #kuhp { background-color: #cce5ff; }
+        #kuhperdata { background-color: #f8d7da; }
+        #kuhd { background-color: #e2e3e5; }
+        #kuhap { background-color: #fefefe; }
+
+
+        #hero {
+            position: relative;
+            height: 100vh;
+            display: flex;
+            flex-direction: column;
+            justify-content: center;
+            align-items: center;
+            text-align: center;
+            color: white;
+            font-weight: bold;
+            overflow: hidden;
+        }
+        .hero-background {
+            position: absolute;
+            top: 0;
+            left: 0;
+            width: 100%;
+            height: 100%;
+            background-size: cover;
+            background-position: center;
+            transition: opacity 1s ease-in-out;
+            z-index: -1; /* Pastikan berada di belakang konten */
+        }
+
+        .hero-content {
+            position: relative;
+            z-index: 2;
+        }
+        .overlay {
+            position: absolute;
+            top: 0;
+            left: 0;
+            width: 100%;
+            height: 100%;
+            background: rgba(0, 0, 0, 0.5);
+        }
+    </style>
+</head>
+<body>
+    <div class="hero-background" id="hero-bg"></div>
+    <div class="overlay"></div>
+    <div id="hero" class="hero-content">
+        <h1>Undang-Undang dan Pancasila</h1>
+        <p>Pelajari dasar hukum dan filosofi negara Indonesia.</p>
+        <div>
+            <a href="#pancasila" class="btn btn-custom">Pancasila</a>
+            <a href="#uud" class="btn btn-custom">UUD 1945</a>
+            <a href="#kuhp" class="btn btn-custom">KUHP</a>
+            <a href="#kuhperdata" class="btn btn-custom">KUHPERDATA</a>
+            <a href="#kuhd" class="btn btn-custom">KUHD</a>
+            <a href="#kuhap" class="btn btn-custom">KUHAP</a>
+        </div>
+    </div>
+    <div id="pancasila" class="section">
+        <h2>PANCASILA</h2>
+        <p>Pancasila adalah dasar negara Indonesia yang terdiri dari lima sila, menjadi pedoman dalam kehidupan berbangsa dan bernegara.</p>
+        <a href="pancasila.html" class="btn btn-custom">Selengkapnya</a>
+    </div>
+    <div id="uud" class="section">
+        <h2>UUD 1945</h2>
+        <p>Undang-Undang Dasar Negara Republik Indonesia Tahun 1945 adalah konstitusi yang menjadi dasar hukum tertinggi dalam sistem hukum Indonesia.</p>
+        <a href="uud-1945.html" class="btn btn-custom">Selengkapnya</a>
+    </div>
+    <div id="kuhp" class="section">
+        <h2>KUHP</h2>
+        <p>Kitab Undang-Undang Hukum Pidana (KUHP) adalah peraturan yang mengatur tindak pidana serta sanksi bagi pelanggarnya di Indonesia.</p>
+        <a href="kuhp.html" class="btn btn-custom">Selengkapnya</a>
+    </div>
+    <div id="kuhperdata" class="section">
+        <h2>KUHPERDATA</h2>
+        <p>Kitab Undang-Undang Hukum Perdata mengatur hubungan hukum antar individu dalam hal keperdataan seperti perjanjian, warisan, dan pernikahan.</p>
+        <a href="kuhperdata.html" class="btn btn-custom">Selengkapnya</a>
+    </div>
+    <div id="kuhd" class="section">
+        <h2>KUHD</h2>
+        <p>Kitab Undang-Undang Hukum Dagang mengatur segala sesuatu yang berkaitan dengan kegiatan perdagangan, perniagaan, dan usaha di Indonesia.</p>
+        <a href="kuhd.html" class="btn btn-custom">Selengkapnya</a>
+    </div>
+    <div id="kuhap" class="section">
+        <h2>KUHAP</h2>
+        <p>Kitab Undang-Undang Hukum Acara Pidana (KUHAP) adalah pedoman yang mengatur proses hukum dalam perkara pidana dari tahap penyelidikan hingga eksekusi.</p>
+        <a href="kuhap.html" class="btn btn-custom">Selengkapnya</a>
+    </div>
+    <button class="btn-top" id="goTop" onclick="scrollToTop()">Ke Atas</button>
+    <script>
+        function scrollToSection(id) {
+            document.getElementById(id).scrollIntoView({ behavior: 'smooth' });
+        }
+        function scrollToTop() {
+            window.scrollTo({ top: 0, behavior: 'smooth' });
+        }
+        window.onscroll = function() {
+            let button = document.getElementById("goTop");
+            if (document.documentElement.scrollTop > 300) {
+                button.style.display = "block";
+            } else {
+                button.style.display = "none";
+            }
+        };
+    </script>
+    <script>
+        const images = [
+            'https://plus.unsplash.com/premium_photo-1668883189361-9c754861dbd6?q=80&w=1974&auto=format&fit=crop&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D',
+            'https://images.unsplash.com/photo-1476158085676-e67f57ed9ed7?q=80&w=2072&auto=format&fit=crop&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D',
+            'https://plus.unsplash.com/premium_photo-1677829177642-30def98b0963?q=80&w=2070&auto=format&fit=crop&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D',
+            'https://images.unsplash.com/photo-1523592121529-f6dde35f079e?q=80&w=2070&auto=format&fit=crop&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D'
+        ];
+        
+        let index = 0;
+        const heroBg = document.getElementById('hero-bg');
+        
+        function changeBackground() {
+            heroBg.style.opacity = 0;
+            setTimeout(() => {
+                heroBg.style.backgroundImage = `url(${images[index]})`;
+                heroBg.style.opacity = 1;
+                index = (index + 1) % images.length;
+            }, 1000);
+        }
+        
+        heroBg.style.backgroundImage = `url(${images[0]})`;
+        setInterval(changeBackground, 5000);
+    </script>
+    
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/js/bootstrap.bundle.min.js"></script>
+</body>
+</html>

@@ -72,13 +72,23 @@
             height: 100vh;
             display: flex;
             flex-direction: column;
-            justify-content: center;
+            justify-content: center; /* Default: teks di tengah */
             align-items: center;
             text-align: center;
             color: white;
             font-weight: bold;
             overflow: hidden;
         }
+
+        /* Untuk layar lebih kecil dari laptop (misalnya di bawah 1024px), teks sedikit naik ke atas */
+        @media (max-width: 1024px) {
+            #hero {
+                justify-content: flex-start; /* Teks di atas tengah */
+                padding-top: 35px; /* Bisa disesuaikan */
+            }
+        }
+
+
         .hero-background {
             position: absolute;
             top: 0;
